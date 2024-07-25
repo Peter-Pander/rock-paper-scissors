@@ -1,3 +1,7 @@
+// Create two new variables named humanScore and computerScore in the global scope
+let humanScore = 0;
+let computerScore = 0; 
+
 // Create a function named getComputerChoice
 function getComputerChoice() {
   // Create the variable "randomNum" and store the Math.random() method in it.
@@ -24,5 +28,3 @@ function getHumanChoice() {
   let humanChoice = prompt("Please enter your choice (Rock, Paper or Scissors):");
   return humanChoice;
 }
-// Test the function
-console.log(getHumanChoice());
