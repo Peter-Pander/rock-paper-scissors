@@ -15,5 +15,14 @@ function getComputerChoice() {
     return "scissors";
   }
 }
+
+// Create a new function named getHumanChoice
+// Write the code so that getHumanChoice 
+// will return one of the valid choices 
+// depending on what the user inputs.
+function getHumanChoice() {
+  let humanChoice = prompt("Please enter your choice (Rock, Paper or Scissors):");
+  return humanChoice;
+}
 // Test the function
-console.log(getComputerChoice());
+console.log(getHumanChoice());
