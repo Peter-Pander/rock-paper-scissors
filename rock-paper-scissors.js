@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
   const THIRD = 1 / 3;
   const TWO_THIRDS = 2 / 3;
@@ -24,4 +27,3 @@ function getHumanChoice () {
   return humanChoice;
 }
 
-console.log (getHumanChoice())
