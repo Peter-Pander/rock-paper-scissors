@@ -30,6 +30,26 @@ function getHumanChoice () {
 function playRound(humanChoice, computerChoice) {
   humanChoice = humanChoice.toLowerCase();
   computerChoice = computerChoice.toLowerCase();
+
+  switch (true) {
+    case (humanChoice === computerChoice):
+      console.log(`It's a tie! Both chose ${humanChoice}.`);
+      break;
+
+    case (
+      (humanChoice === 'rock' && computerChoice === 'scissors') ||
+      (humanChoice === 'scissors' && computerChoice === 'paper') ||
+      (humanChoice === 'paper' && computerChoice === 'rock')
+    ):
+      console.log(`You win! ${humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1)} beats ${computerChoice}!`);
+      humanScore++; 
+      break;
+
+    default:
+      console.log(`You lose! ${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)} beats ${humanChoice}!`);
+      computerScore++; 
+      break;
+  }
 }
 
 const humanSelection = getHumanChoice();
