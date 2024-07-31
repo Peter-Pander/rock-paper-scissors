@@ -19,5 +19,9 @@ function getComputerChoice() {
   return choice;
 }
 
-// Test the function
-console.log(getComputerChoice());
+function getHumanChoice () {
+  let humanChoice = prompt("What's your weapon of choice - rock, paper or scissors?");
+  return humanChoice;
+}
+
+console.log (getHumanChoice())
